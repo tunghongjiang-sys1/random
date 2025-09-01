@@ -30,9 +30,25 @@ void loop() {
 
   // LED ON if < 10 cm, otherwise OFF
   if (distance > 0 && distance < 10) {
-    digitalWrite(4, HIGH);
+    digitalWrite(4, HIGH); // first LED
+    digitalWrite(5, HIGH); // second LED
+    digitalWrite(6, HIGH); // third LED
+    digitalWrite(7, HIGH); // fourth LED
+    digitalWrite(8, HIGH); // fifth LED
+    digitalWrite(9, HIGH); // sixth LED
+    digitalWrite(10, HIGH); // seventh LED
+    digitalWrite(11, HIGH); // eighth LED
+    digitalWrite(12, HIGH); // ninth LED
   } else {
     digitalWrite(4, LOW);
+    digitalWrite(5, LOW);
+    digitalWrite(6, LOW);
+    digitalWrite(7, LOW);
+    digitalWrite(8, LOW);
+    digitalWrite(9, LOW);
+    digitalWrite(10, LOW);
+    digitalWrite(11, LOW);
+    digitalWrite(12, LOW);
   }
 
   delay(500);
